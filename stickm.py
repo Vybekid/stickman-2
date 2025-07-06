@@ -3,7 +3,7 @@ import time
 import random
 
 def draw_environment(x_offset, y_offset, ground_y):
-    """Draws the ground, a moon, and stars in the background."""
+
     # Moon
     t.pencolor("gray")
     t.penup()
@@ -26,7 +26,7 @@ def draw_environment(x_offset, y_offset, ground_y):
     t.goto(x_offset + 400, ground_y)
 
 def draw_blood_splatter(x, y):
-    """Draws a simple blood splatter effect."""
+
     t.penup()
     t.pencolor("darkred")
     for _ in range(15):
@@ -38,7 +38,7 @@ def draw_blood_splatter(x, y):
         t.dot(random.randint(2, 5))
 
 def draw_sword(x, y, angle=45):
-    """Draws a sword at a specific position and angle."""
+
     t.pencolor("silver")
     t.pensize(3)
     t.penup()
@@ -60,7 +60,7 @@ def draw_stickman(
     x, y, color,
     pose="stand", run_phase=0
 ):
-    """Draws a stickman with corrected mask and running animation."""
+
     t.setheading(0)
     t.pencolor(color)
     t.pensize(5)
